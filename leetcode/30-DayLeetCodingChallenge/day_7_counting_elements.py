@@ -8,8 +8,5 @@ class Solution(object):
         counter = 0
         for k, v in Counter(arr).items():
             if k+1 in Counter(arr).keys():
-                if v == 1:               
-                    counter += 1
-                else:
-                    counter += v
+                counter += v
         return counter
